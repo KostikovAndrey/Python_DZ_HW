@@ -29,7 +29,3 @@ def test_dynamic_loading():
 
     finally:
         driver.quit()
-
-
-if __name__ == "__main__":
-    test_dynamic_loading()
