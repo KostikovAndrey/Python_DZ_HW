@@ -41,7 +41,6 @@ def test_session_storage_auth():
         url_user1 = driver.current_url
         print(f"URL пользователя 1 (KostikovAM): {url_user1}")
 
-        # Шаг 6: Разлогиньтесь (очистите куки)
         driver.delete_all_cookies()
 
         driver.add_cookie(user2_cookie)
