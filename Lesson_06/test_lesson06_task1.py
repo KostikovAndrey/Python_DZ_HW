@@ -15,7 +15,7 @@ def test_dynamic_loading():
 
         wait = WebDriverWait(driver, 10)
         hello_text_element = wait.until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, "#finish h4"))
+            EC.visibility_of_element_located((By.CSS_SELECTOR, "#finish h4"))
         )
 
         driver.save_screenshot("dynamic_loading_screenshot.png")
@@ -24,8 +24,6 @@ def test_dynamic_loading():
         assert actual_text == "Hello World!", (
             f"Expected 'Hello World!', but got '{actual_text}'"
         )
-
-        print("Тест успешно пройден!")
 
     finally:
         driver.quit()
