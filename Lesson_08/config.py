@@ -1,5 +1,5 @@
 class config:
     BASE_URL = "https://ru.yougile.com/"
-    USER = ""
-    PWD = ""
+    USER = "" #Почта
+    PWD = ""  #Пароль
     TOKEN = ""
