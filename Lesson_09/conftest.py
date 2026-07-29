@@ -2,7 +2,7 @@ from sqlalchemy import Column, Integer, String, create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
 import pytest
 
-DATABASE_URL = "postgresql://postgres:ndr@localhost:5432/postgres"
+DATABASE_URL = "postgresql://myuser:mypassword@localhost:5432/postgres"
 
 Base = declarative_base()
 
